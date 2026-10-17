@@ -1,0 +1,45 @@
+.income-expense__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 16px;
+}
+
+/* الكروت الصغيرة: دخل / مصروف */
+.income-expense__child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  padding: 20px 40px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #eaf3ff 0%, #cfe2ff 100%);
+  border: 1px solid #b6d0fb;
+  box-shadow: 0 8px 24px rgba(21, 80, 200, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.income-expense__child:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(21, 80, 200, 0.28);
+}
+
+.title {
+  margin: 0 0 6px;
+  font-size: 1.4rem;
+  color: #0a2a73;
+}
+
+.price {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1550c8;
+}
+
+/* القيمة صفر: أحمر واضح */
+.price_zero {
+  color: #e00000 !important;
+}
